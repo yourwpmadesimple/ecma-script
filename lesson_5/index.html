@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECMAScript Learning Reference - Primitives</title>
+</head>
+
+<body>
+    <h1>ECMAScript - Symbols</h1>
+    <script>
+        const id = Symbol();
+        const courseInfo = {
+            title: 'JavaScript',
+            topics: [ 'strings', 'arrays', 'objects' ],
+            id: 'js-course'
+        }
+        courseInfo[ id ] = 12345;
+        console.log(courseInfo)
+    </script>
+</body>
+
+</html>
