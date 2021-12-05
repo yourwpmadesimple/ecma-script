@@ -6,9 +6,10 @@ const vacation = {
 }
 
 function marketing({ destination, activity }) {
-  return `Com to ${destination} and enjoy some ${activity}`
+  return `Come to ${destination} and enjoy some ${activity}`
 }
 console.log(marketing(vacation))
+document.querySelector('#root').innerHTML = marketing(vacation)
 
 const sandwich = {
   title: "Reuben",
