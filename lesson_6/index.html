@@ -1,18 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ECMAScript Learning Reference - Map</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ECMAScript Learning Reference - Map Object</title>
+    </head>
 
-<body>
-    <h1>ECMAScript - Map</h1>
-    <script>
+    <body>
+        <h1>ECMAScript - Map Object</h1>
+        <script>
+            let course = new Map()
+            course.set("react", {
+                description: 'https://reactjs.org/',
+                name: 'React JS'
+            })
 
-    </script>
-</body>
+            course.set('jest', {
+                description: 'https://jestjs.io/',
+                name: 'Jest'
+            })
+
+            // console.log(course)
+            // console.log(course.react) // will return undefined
+            // console.log(course.get('react'))
+            // console.log(course.get('jest'))
+
+            let details = new Map([
+                [ new Date(), 'today' ],
+                [ 2, { javascript: [ 'js', 'node', 'react' ] } ],
+                [ 'items', [ 1, 2 ] ]
+            ]);
+            console.log('This is details: ', details)
+            details.forEach(item => {
+                console.log(item)
+            })
+        </script>
+    </body>
 
 </html>
