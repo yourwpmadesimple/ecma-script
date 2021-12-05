@@ -15,8 +15,13 @@
             let books = new Set()
             books.add('Pride and Prejudice')
             books.add('War and Peace')
-
+            books.add('War and Peace').add('Oliver Twist') // add a new value to books Set
             console.log(books)
+
+            books.delete('Oliver Twist') // deletes a string from the Set Object
+            console.log(books)
+
+            console.log('has Oliver Twist? ', books.has('Oliver Twist')) // Searches for exact string value
         </script>
     </body>
 
