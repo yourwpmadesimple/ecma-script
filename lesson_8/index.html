@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ECMAScript Learning Reference - spread</title>
+    </head>
+    <!-- Source https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set -->
+
+    <body>
+        <h1>ECMAScript - spread Object</h1>
+        <script>
+            let cats = [ 'Biscuit', 'Jungle' ];
+            let dogs = [ 'Stella', 'Camper' ]
+            
+            console.log(`Cats array: ${cats} `)
+            console.log(`Dogs array: ${dogs} `)
+            let animals = [ 'Smoky', 'Miro', 'Swimy' ] 
+            console.log('Original Animals array: ', animals)
+            animals = [ 'Smoky', 'Miro', 'Swimy', cats, dogs ]
+            console.log('Cats and Dogs arrays pushed in on the Animals array as a nested array: ', animals)
+            animals = [ 'Smoky', 'Miro', 'Swimy', ...cats, ...dogs ]
+            console.log('Cats and Dogs array values spread in to the Animals array: ', animals)
+        </script>
+    </body>
+
+</html>
